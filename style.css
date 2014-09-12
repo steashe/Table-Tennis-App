@@ -1,0 +1,101 @@
+﻿*                   { margin:0; }
+h1                  { color:white; margin-bottom:15px; }
+form                { margin:15px 0 30px 0; clear:both; }
+div                 { margin-bottom:10px; text-align:center; padding:10px 0 10px 0; }
+p                   { color:white; }
+label               { font-size:16px; color:white; }
+select              { margin-bottom:10px; text-align:center; }
+option              { width:100px; text-align:center; }
+input[type=radio]   { height:19px; vertical-align:bottom; }
+table, 
+tr                  { border-collapse:collapse; border:2px solid; }
+th                  { padding:0 10px; background-color:white; text-transform:uppercase; }
+th:first-of-type    { width:300px; }
+td                  { font-weight:bold; }
+footer              { margin-top:10px; color:#004A93; }
+
+/*General*/
+#padL       { width:100px; float:left; }
+#padR       { width:100px; float:right; }
+#newGame    { display:none; margin:0 auto; }
+#lockIn     { display:block; margin:0 auto; }
+
+.container      { width:1280px; margin:0 auto; background-color:#06C; height:100%; }
+.hide           { visibility:hidden; }
+
+/*Scoreboard*/
+#left       { float:left; background:black; margin-left:5px; }
+#p1serve    { float:left; margin-left:10px; }
+#v          { float:left; padding:75px 0 0 5px; font-size:40px; }
+#right      { float:right; background:red; margin-right:5px; }
+#p2serve    { float:right; margin-right:10px;  }
+#result     { margin-bottom:15px; visibility:hidden; }
+
+.playerBlock    { border:5px solid white; width:605px; height:125px; padding:25px 0; border-radius:10px; }
+.changeScore    { font-size:25px; width:50px; height:50px; visibility:hidden; }
+.score          { height:44px; width:46px; font-size:25px; text-align:center; }
+.server         { display:inline; width:20px; visibility:hidden; }
+
+/*League table*/
+#league     { margin:5px auto; border:1px solid black; width:800px; }
+
+.highlight      { background-color:#69F; }
+.altHighlight   { background-color:#39F; }
+
+/*iPad 1/2 size screen*/
+@media screen and (max-width:768px) {
+    th:first-of-type    { width:262px; }
+   
+    /*General*/
+    .container      { width:768px; }
+
+    /*Scoreboard*/
+    .playerBlock    { width:350px; }
+
+    /*League table*/
+    #league { width:700px; }  
+}
+
+/*iPhone 4/5 size screen*/
+@media screen and (max-width:640px) {
+    form    { margin:15px 0 0 0; }
+    th:first-of-type    { width:225px; }
+
+    /*General*/
+    #lockIn { display:inline; }
+    
+    .container  { width:640px; }
+
+    /*Scoreboard*/
+    #left,      
+    #right  { margin:10px auto; float:none; } 
+    #v      { display:none; }
+    #result { margin-bottom:10px; }
+
+    .playerBlock{ padding-top:10px; padding-bottom:20px; height:auto; }  
+    .server     { width:15px; }
+   
+     /*League table*/
+    #league { width:600px; }   
+}
+
+/*iPhone size screen*/
+@media screen and (max-width:320px) {
+    form    { margin:15px 0 10px 0; }
+    th:first-of-type    { width:120px; }
+
+    /*General*/
+    #padL   { width:50px; float:left; }
+    #padR   { width:50px; float:right; }
+    #lockIn { display:inline; }
+    
+    .container  { width:320px; }
+    /*Scoreboard*/
+    #left   { margin-left:0px; width:310px; }
+    #v      { display:none; }
+    #right  { margin-right:0px; width:310px; }
+    #result { margin-bottom:5px; }   
+
+    /*League table*/
+    #league { width:318px; }
+}
