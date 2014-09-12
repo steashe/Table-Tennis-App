@@ -1,5 +1,5 @@
 ﻿/// <reference path="gameController.js" />
-/// <reference path="player.js" />
+/// <reference path="player.js" /> 
 leagueController = {
     Data: {
         newPlayer: ''
