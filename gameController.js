@@ -1,6 +1,5 @@
 ﻿/// <reference path="leagueController.js" />
 /// <reference path="player.js" />
-/// <reference path="jquery.js" />
 gameController = {
     ScoreSheet: {
         /// <field name="player1" type="Player">Player 1</field>       
